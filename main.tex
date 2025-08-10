@@ -1,0 +1,309 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Nick Kvizhinadze} \\ \vspace{2pt} 
+    \vspace{-7pt}
+\end{center}
+
+%-----------PERSONAL INFORMATION-----------
+\section{\color{airforceblue}PERSONAL INFORMATION}
+\begin{itemize}[leftmargin=0.15in]
+  \item[] \textbf{Name:} Nick Kvizhinadze
+  \item[] \textbf{Location:} Tbilisi, Georgia
+  \item[] \textbf{Phone:} +995 577 720 960
+  \item[] \textbf{Email:} \href{mailto:nickkvizhinadze@gmail.com}{\color{blue}{nickkvizhinadze@gmail.com}}
+  \item[] \textbf{LinkedIn:} \href{https://www.linkedin.com/in/nickkvizhinadze/}{\color{blue}{linkedin.com/in/nickkvizhinadze}}
+  \item[] \textbf{Website:} \href{https://kvizhinadze.net}{\color{blue}{kvizhinadze.net}}
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{C\#, JavaScript, SQL, HTML, CSS}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Frameworks \& Libraries:}}{ \normalsize{ASP.NET Core, React.js}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Databases:}}{ \normalsize{MsSql, PostgreSQL, MongoDB, Redis}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Messaging/Queueing:}}{ \normalsize{RabbitMQ, SQS}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Cloud Platforms:}}{ \normalsize{AWS}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Other:}}{ \normalsize{Git, Docker, CI/CD, Azure }}
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+%-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior .NET Developer}{Aug 2024 -- Present}
+      {extra.ge (Remote)}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of a scalable e-commerce platform using microservices architecture.}
+        \resumeItem{Actively participated in architectural planning and technical decision-making to ensure robust and maintainable solutions.}
+        \resumeItem{Implemented and optimized backend services with C\#, ASP.NET Core, DDD, EF Core, and Redis.}
+        \resumeItem{Integrated AWS SQS for asynchronous messaging and improved system reliability.}
+        \resumeItem{Utilized Git and Docker for version control and containerization; deployed solutions on AWS Cloud.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tech Lead}{Mar 2021 -- Present}
+      {FundingSouq (Remote)}{}
+      \resumeItemListStart
+        \resumeItem{Lead the technical team, overseeing project architecture, task definition, and implementation.}
+        \resumeItem{Designed and developed backend services using C\#, ASP.NET Core, EF Core, and RabbitMQ.}
+        \resumeItem{Directed frontend development with React, JavaScript, TypeScript, and HTML/CSS.}
+        \resumeItem{Managed CI/CD pipelines and deployments using Azure DevOps, Git, and Docker.}
+        \resumeItem{Leveraged Google Cloud for scalable infrastructure and cloud services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Developer}{Mar 2020 -- Mar 2021}
+      {TBC Bank, Tbilisi}{}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained backend microservices using C\#, ASP.NET Core, and Domain-Driven Design (DDD).}
+        \resumeItem{Implemented asynchronous communication with RabbitMQ and optimized data access with EF Core and Redis.}
+        \resumeItem{Collaborated with cross-functional teams to deliver high-quality, scalable banking solutions.}
+        \resumeItem{Utilized Git and Azure DevOps for source control and continuous integration.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Lead Web Developer}{Nov 2017 -- Mar 2020}
+      {VTB Bank Georgia, Tbilisi}{}
+      \resumeItemListStart
+        \resumeItem{Led a team of developers for the Video Banking Project, focusing on backend architecture and delivery.}
+        \resumeItem{Planned, delegated, and reviewed tasks to ensure timely and high-quality releases.}
+        \resumeItem{Developed backend solutions using C\#, ASP.NET Core, EF Core, and SignalR.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{Feb 2017 -- Nov 2017}
+      {GPI Holding, Tbilisi}{}
+      \resumeItemListStart
+        \resumeItem{Developed new features and maintained the insurance core system.}
+        \resumeItem{Collaborated with business analysts and QA to deliver reliable web solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Web Developer}{Jun 2016 -- Jan 2017}
+      {Fina Ltd, Tbilisi}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of the web version of accountant software.}
+        \resumeItem{Assisted in bug fixing, feature implementation, and code reviews.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {St. Andrew the First-Called Georgian University}{Tbilisi, Georgia}
+      {Bachelor's Degree}{Oct 2010 -- Jul 2015}
+      \resumeItemListStart
+        \resumeItem{Relevant coursework: Computer Science, Mathematics, Software Engineering}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tbilisi N42 Public School of Physics–Mathematics Named After Academician Ilia Vekua}{Tbilisi, Georgia}
+      {High School Diploma}{Sep 2004 -- Jul 2010}
+      \resumeItemListStart
+        \resumeItem{Specialized in Physics and Mathematics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROJECTS-----------
+% \section{\color{airforceblue}PROJECTS}    
+%     \resumeItemListStart
+%         \vspace{0.5pt}
+%         \resumeItem{\normalsize{\textbf{Personal Portfolio Website}, Designed and developed a personal portfolio using Next.js, React, and AWS to showcase projects and skills.} \href{https://github.com/nickkvizhinadze/portfolio}{\color{blue}\underline{GitHub}}}
+%         \vspace{-5pt}
+        
+%         \resumeItem{\normalsize{\textbf{Task Manager App}, Built a full-stack task management application with React, Node.js, and MongoDB, featuring authentication and real-time updates.} \href{https://github.com/nickkvizhinadze/task-manager}{\color{blue}\underline{GitHub}}}
+%         \vspace{-5pt}
+
+%         \resumeItem{\normalsize{\textbf{E-commerce Platform}, Developed an e-commerce web app with product listings, shopping cart, and Stripe integration using React and Express.}  \href{https://github.com/nickkvizhinadze/ecommerce-platform}{\color{blue}\underline{GitHub}}}
+%         \vspace{-5pt}
+
+%         \resumeItem{\normalsize{\textbf{Chat Application}, Created a real-time chat app using Socket.io, Node.js, and React, supporting multiple chat rooms and user authentication.} \href{https://github.com/nickkvizhinadze/chat-app}{\color{blue}\underline{GitHub}}}
+%     \resumeItemListEnd  
+   
+%  \vspace{-12pt}
+%
+
+%-----------INTERESTS---------------
+\section{\color{airforceblue}INTERESTS}
+  \resumeItemListStart
+      \item[] Sports cars, overlanding, gaming, and game development.
+  \resumeItemListEnd 
+\vspace{-12pt}
+
+\end{document}
