@@ -79,3 +79,92 @@
     text-transform: capitalize;
     margin: 25px 0 0;
 }
+
+.psSocial{
+    left: 0;
+    bottom: 30px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 35px;
+}
+.psSocial a{
+    width: 40px;
+    height: 40px;
+    background: #201e29;
+    color: #FFF;
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 14px 0;
+    margin: 0 10px 0 0;
+    transition: all ease 300ms;
+    -moz-transition: all ease 300ms;
+    -webkit-transition: all ease 300ms;
+    -o-transition: all ease 300ms;
+    -ms-transition: all ease 300ms;
+}
+.psSocial a.facebook{
+    background: #4267B2;
+}
+.psSocial a.twitter{
+    background: #1DA1F2;
+}
+.psSocial a.instagram{
+    background: #b834b6;
+}
+.psSocial a.dribbble{
+    background: #EA4C89;
+}
+.psSocial a.brand-what{
+    background: #6FE264;
+}
+.psSocial a.brand-yout{
+    background: #F70000;
+}
+.psSocial a.brand-snap{
+    background: #FFFC00;
+}
+.psSocial a.pinterest{
+    background: #E11A21;
+}
+.psSocial a.linkedin{
+    background: #0077B7;
+}
+.psSocial a.vimeo{
+    background: #2DABE2;
+}
+.psSocial a.vk{
+    background: #4986CC;
+}
+.psSocial a.digg{
+    background: #1B5791;
+}
+.psSocial a.github{
+    background: #171515;
+}
+.psSocial a.rss{
+    background: #FFA500;
+}
+.psSocial a.skype{
+    background: #00AFF0;
+}
+.psSocial a.behance{
+    background: #1769FF;
+}
+.psSocial a.xing{
+    background: #006064;
+}
+.psSocial a.tumblr{
+    background: #2A445F;
+}
+.psSocial a.reddit{
+    background: #F74300;
+}
+.psSocial a:hover {
+    background: #7635f5;
+    color: #fff;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}

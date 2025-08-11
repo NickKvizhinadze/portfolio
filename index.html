@@ -13,9 +13,11 @@
             theme: {
                 extend: {
                     colors: {
-                        'dark-bg': '#1A1A1A',
-                        'card-bg': '#242424',
-                        'accent': '#8B5CF6',
+                        'dark-bg': '#0a0f0b',         // Matrix black
+                        'card-bg': '#111a13',         // Slightly lighter black
+                        'accent': '#39ff14',          // Matrix neon green
+                        'matrix-green': '#39ff14',    // For gradients or highlights
+                        'matrix-gray': '#1a2a1a',     // Subtle gray-green
                     }
                 }
             }
@@ -39,7 +41,8 @@
                 <!-- Navigation -->
                 <nav class="flex items-center space-x-4">
                     <a href="#profile" class="bg-accent px-4 py-2 rounded-lg text-white font-medium">Profile</a>
-                    <a href="#skills" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Skills
+                    <a href="#skills"
+                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Skills
                     </a>
                     <a href="#experience"
                         class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Experience</a>
@@ -116,22 +119,26 @@
                 <div class="bg-card-bg rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-4">LET'S CONNECT</h3>
                     <div class="flex space-x-3">
-                        <a href="https://www.facebook.com/nick.kvizhinadze"
-                            class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/nick_kvizhinadze/"
-                            class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nickkvizhinadze/"
-                            class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://kvizhinadze.net"
-                            class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-accent transition-colors">
-                            <i class="fas fa-globe"></i>
-                        </a>
+                        <div class="psSocial width-100">
+                            <a class="linkedin" href="https://www.linkedin.com/in/nickkvizhinadze/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="github" href="https://github.com/NickKvizhinadze/">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="facebook" href="https://www.facebook.com/nick.kvizhinadze">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="instagram" href="https://www.instagram.com/nick_kvizhinadze">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="twitter" href="https://x.com/kvizhinadzenick">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="digg" href="https://kvizhinadze.net/">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
