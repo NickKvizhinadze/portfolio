@@ -26,46 +26,8 @@
 </head>
 
 <body class="bg-dark-bg text-white min-h-screen">
-    <!-- Header -->
-    <header class="bg-card-bg border-b border-gray-700 fixed top-0 left-0 w-full z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <div class="relative">
-                        <span class="text-2xl font-bold">Nick Kvizhinadze</span>
-                        <div class="absolute -top-1 -left-1 w-2 h-2 bg-accent rounded-full"></div>
-                    </div>
-                </div>
-
-                <!-- Navigation -->
-                <nav class="flex items-center space-x-4">
-                    <a href="#profile" class="bg-accent px-4 py-2 rounded-lg text-white font-medium">Profile</a>
-                    <a href="#skills"
-                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Skills
-                    </a>
-                    <a href="#experience"
-                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Experience</a>
-                    <a href="#education"
-                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Education</a>
-                    <a href="#interests"
-                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Interests</a>
-                    <a href="#languages"
-                        class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Languages</a>
-                    <a href="#facts" class="px-4 py-2 rounded-lg text-gray-300 hover:text-white transition-colors">Facts
-                    </a>
-
-                    <!-- Theme Toggle -->
-                    <button class="ml-4 p-2 rounded-lg hover:bg-gray-700 transition-colors">
-                        <i class="fas fa-sun text-white"></i>
-                    </button>
-                </nav>
-            </div>
-        </div>
-    </header>
-
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8" style="padding-top: 112px;">
+    <main class="container mx-auto px-6 py-8" style="padding-top: 50px;">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Left Column -->
             <div class="lg:col-span-1 space-y-6" id="profile">
@@ -76,26 +38,10 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
                     <div class="bg-card-bg p-6">
-                        <h2 class="text-xl font-bold text-center">HI, I'M NICK</h2>
+                        <h2 class="text-xl font-bold text-center">Nick Kvizhinadze</h2>
                     </div>
                 </div>
-
-                <!-- Personal Info -->
-                <div class="bg-card-bg rounded-xl p-6">
-                    <h3 class="text-lg font-bold mb-4">PERSONAL INFO</h3>
-                    <ul class="text-gray-300 leading-relaxed space-y-1">
-                        <li><b>Name:</b> Nick Kvizhinadze</li>
-                        <li><b>Location:</b> Tbilisi, Georgia</li>
-                        <li><b>Phone:</b> +995 577 720 960</li>
-                        <li><b>Email:</b> <a href="mailto:nickkvizhinadze@gmail.com"
-                                class="text-accent hover:underline">nickkvizhinadze@gmail.com</a></li>
-                        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/nickkvizhinadze/"
-                                class="text-accent hover:underline">linkedin.com/in/nickkvizhinadze</a></li>
-                        <li><b>Website:</b> <a href="https://kvizhinadze.net"
-                                class="text-accent hover:underline">kvizhinadze.net</a></li>
-                    </ul>
-                </div>
-
+                
                 <!-- Get In Touch -->
                 <div class="bg-card-bg rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-4">GET IN TOUCH</h3>
@@ -106,7 +52,10 @@
                         </div>
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-envelope text-accent"></i>
-                            <span>nickkvizhinadze@gmail.com</span>
+                            <span> <a href="mailto:nickkvizhinadze@gmail.com" class="text-accent hover:underline">
+                                    nickkvizhinadze@gmail.com
+                                </a>
+                            </span>
                         </div>
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-map-marker-alt text-accent"></i>
@@ -115,7 +64,7 @@
                     </div>
                 </div>
 
-                <!-- Let's Connect -->
+                <!-- Lets Connect -->
                 <div class="bg-card-bg rounded-xl p-6">
                     <h3 class="text-lg font-bold mb-4">LET'S CONNECT</h3>
                     <div class="flex space-x-3">
@@ -160,63 +109,6 @@
                 <!-- Skills Section -->
                 <div class="bg-card-bg rounded-xl p-6" id="skills">
                     <h3 class="text-lg font-bold mb-6">SKILLS</h3>
-                    <div class="space-y-6">
-                        <!-- Backend Development -->
-                        <div>
-                            <div class="flex items-center justify-between mb-2">
-                                <div class="flex items-center space-x-3">
-                                    <i class="fas fa-server text-white"></i>
-                                    <span class="font-medium">BACKEND DEVELOPMENT</span>
-                                </div>
-                                <span class="text-sm text-gray-400">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-purple-500 h-2 rounded-full skill-bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <!-- Database Design -->
-                        <div>
-                            <div class="flex items-center justify-between mb-2">
-                                <div class="flex items-center space-x-3">
-                                    <i class="fas fa-database text-white"></i>
-                                    <span class="font-medium">DATABASE DESIGN</span>
-                                </div>
-                                <span class="text-sm text-gray-400">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-green-500 h-2 rounded-full skill-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <!-- Frontend Development -->
-                        <div>
-                            <div class="flex items-center justify-between mb-2">
-                                <div class="flex items-center space-x-3">
-                                    <i class="fas fa-plug text-white"></i>
-                                    <span class="font-medium">FRONTEND DEVELOPMENT</span>
-                                </div>
-                                <span class="text-sm text-gray-400">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-500 h-2 rounded-full skill-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <!-- Cloud & DevOps -->
-                        <div>
-                            <div class="flex items-center justify-between mb-2">
-                                <div class="flex items-center space-x-3">
-                                    <i class="fas fa-cloud text-white"></i>
-                                    <span class="font-medium">CLOUD & DEVOPS</span>
-                                </div>
-                                <span class="text-sm text-gray-400">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-indigo-500 h-2 rounded-full skill-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-card-bg rounded-xl p-6">
                     <div class="space-y-6">
                         <!-- Programming Languages -->
                         <div>
